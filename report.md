@@ -1,5 +1,20 @@
 
-Webserver setup on **ec2-18-210-18-191.compute-1.amazonaws.com**
+1. Gatava darbam infrastruktūrā.
+![Infrastucture componentst](https://github.com/pavljiks/JG-MD4/blob/main/report_pictures/Selection_386.png?raw=true)
+
+
+2. Bilde ar Wordpress lapu un serveru sarakstu Jūsu repozitorija.
+3. Apraksts MD formātā Jūsu repozitorija.
+4. Jūsu arhitektūras risinājums no diagrams.net jābūt Jūsu repozitorija.
+5. Aprēķināt izmaksas izmantojot AWS kalkulatorus. Rezultātam jābūt bildei un aprakstam MD
+formātā Jūsu repozitorija.
+
+6. Ka varētu izskatīties Defenition of Done – šim definētiem uzdevumiem.
+
+
+### Configs and additional commands:
+
+nginx config on **ec2-18-210-18-191.compute-1.amazonaws.com**
 ```
 server {
     listen 80;
