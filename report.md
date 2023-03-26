@@ -11,7 +11,7 @@
 4. Jūsu arhitektūras risinājums no diagrams.net jābūt Jūsu repozitorija.
 ![Main page](https://github.com/pavljiks/JG-MD4/blob/main/report_pictures/aws-schema.png?raw=true)
 
-6. Aprēķināt izmaksas izmantojot AWS kalkulatorus. Rezultātam jābūt bildei un aprakstam MD
+5. Aprēķināt izmaksas izmantojot AWS kalkulatorus. Rezultātam jābūt bildei un aprakstam MD
 formātā Jūsu repozitorija.
 
 6. Ka varētu izskatīties Defenition of Done – šim definētiem uzdevumiem.
