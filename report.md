@@ -9,7 +9,7 @@
 
 ## 3. Apraksts MD formātā Jūsu repozitorija.
 
-Šis pats fails: https://github.com/pavljiks/JG-MD4/edit/main/report.md 
+Šis pats fails: https://github.com/pavljiks/JG-MD4/blob/main/report.md
 
 ## 4. Jūsu arhitektūras risinājums no diagrams.net jābūt Jūsu repozitorija.
 ![Main page](https://github.com/pavljiks/JG-MD4/blob/main/report_pictures/aws-schema.png?raw=true)
