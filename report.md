@@ -1,12 +1,17 @@
 
-1. Gatava darbam infrastruktūrā.
-![Infrastucture componentst](https://github.com/pavljiks/JG-MD4/blob/main/report_pictures/Selection_386.png?raw=true)
-
-
+1. Gatava darbam infrastruktūra.
+![Infrastucture component](https://github.com/pavljiks/JG-MD4/blob/main/report_pictures/Selection_386.png?raw=true)
+---
 2. Bilde ar Wordpress lapu un serveru sarakstu Jūsu repozitorija.
+![Main page](https://github.com/pavljiks/JG-MD4/blob/main/report_pictures/Selection_385.png?raw=true)
+---
 3. Apraksts MD formātā Jūsu repozitorija.
+Šis fails: https://github.com/pavljiks/JG-MD4/edit/main/report.md
+---
 4. Jūsu arhitektūras risinājums no diagrams.net jābūt Jūsu repozitorija.
-5. Aprēķināt izmaksas izmantojot AWS kalkulatorus. Rezultātam jābūt bildei un aprakstam MD
+![Main page](https://github.com/pavljiks/JG-MD4/blob/main/report_pictures/aws-schema.png?raw=true)
+
+6. Aprēķināt izmaksas izmantojot AWS kalkulatorus. Rezultātam jābūt bildei un aprakstam MD
 formātā Jūsu repozitorija.
 
 6. Ka varētu izskatīties Defenition of Done – šim definētiem uzdevumiem.
