@@ -1,25 +1,44 @@
 
-1. Gatava darbam infrastruktūra.
+## 1. Gatava darbam infrastruktūra.
 ![Infrastucture component](https://github.com/pavljiks/JG-MD4/blob/main/report_pictures/Selection_386.png?raw=true)
----
-2. Bilde ar Wordpress lapu un serveru sarakstu Jūsu repozitorija.
+
+
+## 2. Bilde ar Wordpress lapu un serveru sarakstu Jūsu repozitorija.
 ![Main page](https://github.com/pavljiks/JG-MD4/blob/main/report_pictures/Selection_385.png?raw=true)
----
-3. Apraksts MD formātā Jūsu repozitorija.
-Šis fails: https://github.com/pavljiks/JG-MD4/edit/main/report.md
----
-4. Jūsu arhitektūras risinājums no diagrams.net jābūt Jūsu repozitorija.
+
+
+## 3. Apraksts MD formātā Jūsu repozitorija.
+
+Šis pats fails: https://github.com/pavljiks/JG-MD4/edit/main/report.md 
+
+## 4. Jūsu arhitektūras risinājums no diagrams.net jābūt Jūsu repozitorija.
 ![Main page](https://github.com/pavljiks/JG-MD4/blob/main/report_pictures/aws-schema.png?raw=true)
 
-5. Aprēķināt izmaksas izmantojot AWS kalkulatorus. Rezultātam jābūt bildei un aprakstam MD
-formātā Jūsu repozitorija.
 
-6. Ka varētu izskatīties Defenition of Done – šim definētiem uzdevumiem.
+## 5. Aprēķināt izmaksas izmantojot AWS kalkulatorus. Rezultātam jābūt bildei un aprakstam MD
+Lai darbinātu lapu ir nepieciešami 2 gab. ec2 instances ((1 vcpu + 1 GB ram) - katrai). 
+* Webserveris (nginx + php) 
+* Datubaze (mysql)
+
+Abiem tiek izmantots ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20230208. 
+On-demand modelī sanāk 8.47 eur/mēnesī. Zemāk vizualizācija:
+![Main page](https://github.com/pavljiks/JG-MD4/blob/main/report_pictures/aws-instances.png?raw=true)
+![Main page](https://github.com/pavljiks/JG-MD4/blob/main/report_pictures/aws-instance-cost.png?raw=true)
 
 
-### Configs and additional commands:
+## 6. Ka varētu izskatīties Defenition of Done – šim definētiem uzdevumiem.
+The Definition of Done (DoD) for a WordPress lapai varētu būt stāvoklis kas sevī iekļautu. 
+1. Infrastukūra ir sagatavota ar nepieciešamām komponentēm (webserver + datu bāze). 
+2. Lapas kods (wordpress kods ir izvietots uz webservera un sinhronizēts ar pašu projektu githubā). 
+3. Lapas dizains un saturs ir papildināts un viegli navigējams.
+4. Ir sagatavoti nepieciešamie faili (conf un izpildāmās komandas). infrastuktūras atkārtotai pacelšānai (var tikt izmantoti automatizētai izmaiņu piegādei nākotnē). 
 
-nginx config on **ec2-18-210-18-191.compute-1.amazonaws.com**
+
+## Additional info:
+
+## Webserver setup 
+nginx config
+
 ```
 server {
     listen 80;
@@ -51,9 +70,9 @@ server {
 ```
 
 
-
-
-LetEncrpyt certificate (**ACME server refuses to issue a certificate for this domain name, because it is forbidden by policy**:
+### Certificate 
+**LetEncrpyt certificate** 
+ACME server refuses to issue a certificate for this domain name, because it is forbidden by policy. 
 ```
 An unexpected error occurred:
 The server will not issue certificates for the identifier :: Error creating new order :: 
@@ -63,7 +82,12 @@ Ask for help or search for solutions at https://community.letsencrypt.org. See t
 
 ```
 
-Database setup on **ip-172-31-53-115.ec2.internal**
+**Self-sign certificate** 
+Generate certificate (self-sign-cert.pem) and key self-sign-key.pem)
+`openssl req -x509 -newkey rsa:1024 -nodes -out self-sign-cert.pem -keyout self-sign-key.pem -days 1095 -subj "/C=no/O=null/OU=null/CN=it.support@company.com"`
+
+
+### Database setup 
 
 Wordpress database setup:
 ```
